@@ -22,6 +22,18 @@ function parseCSV($filename) {
 }
 
 //ejemplo de uso
+try {
+    $csvFilename = 'ejemplo.csv';
+    $data = parseCSV($csvFilename);
 
+    foreach ($data as $row) {
+        foreach ($row as $column => $value) {
+            echo "$column: $value\t";
+        }
+        echo "\n";
+    }
+} catch (Exception $e) {
+    echo "Error: " . $e->getMessage();
+}
 
 ?>
