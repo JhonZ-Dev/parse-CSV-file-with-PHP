@@ -16,6 +16,9 @@ function parseCSV($filename) {
         $assocRow = array_combine($columns, $rowData);
         $result[] = $assocRow;
     }
+
+    return $result;
+
 }
 
 
