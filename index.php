@@ -11,6 +11,11 @@ function parseCSV($filename) {
     }
     $columns = str_getcsv(array_shift($csvData)); // Obtener nombres de columnas
     $result = [];
+    foreach ($csvData as $row) {
+        $rowData = str_getcsv($row);
+        $assocRow = array_combine($columns, $rowData);
+        $result[] = $assocRow;
+    }
 }
 
 
