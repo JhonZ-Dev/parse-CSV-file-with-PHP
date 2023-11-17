@@ -15,3 +15,12 @@ Este proyecto es un simple gestor de tareas desarrollado en PHP.
 
 
 ## USO
+
+2. **AAgregar una tarea**
+require 'TaskManager.php';
+
+$taskManager = new TaskManager();
+$taskManager->addTask("Hacer la compra");
+$taskManager->addTask("Preparar la presentación");
+
+3. **Mostrar tareas pendiente**
