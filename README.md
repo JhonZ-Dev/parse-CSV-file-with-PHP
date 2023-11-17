@@ -24,3 +24,5 @@ $taskManager->addTask("Hacer la compra");
 $taskManager->addTask("Preparar la presentación");
 
 3. **Mostrar tareas pendiente**
+<?php
+$taskManager->showTasks();
